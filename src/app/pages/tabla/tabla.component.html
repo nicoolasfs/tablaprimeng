@@ -1,0 +1,19 @@
+<h1 ALIGN=center>TABLA PRIMENG</h1>
+<p-table [value]="dataSource">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Articulo</th>
+            <th>Marca</th>
+            <th>Talla</th>
+            <th>Cantidad</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-dadataSource>
+        <tr>
+            <td>{{dadataSource.articulo}}</td>
+            <td>{{dadataSource.marca}}</td>
+            <td>{{dadataSource.talla}}</td>
+            <td>{{dadataSource.cantidad}}</td>
+        </tr>
+    </ng-template>
+</p-table>
